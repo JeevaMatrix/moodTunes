@@ -37,7 +37,7 @@ const Home = ({ user }) => {
   const fetchSongs = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`http://localhost:5000/songs/${mood}?lang=${language}`);
+      const res = await axios.get(`https://moodtunesbackend.onrender.com/songs/${mood}?lang=${language}`);
       const fetched = res.data.videos;
   
       setAllVideos(fetched);
@@ -46,7 +46,7 @@ const Home = ({ user }) => {
       setShownVideoIds(new Set(initialShuffle.map(v => v.videoId)));
 
       if (user) {
-        await axios.post('http://localhost:5000/log', {
+        await axios.post('https://moodtunesbackend.onrender.com/log', {
           userId: user.userId,
           mood: mood, // replace with actual selected mood variable
         });

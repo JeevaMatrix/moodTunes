@@ -16,7 +16,7 @@ const Signup = () => {
     e.preventDefault();
     setErr('');
     try {
-      await axios.post('http://localhost:5000/signup', form);
+      await axios.post('https://moodtunesbackend.onrender.com/signup', form);
       setMsg('Signup successful!');
       setTimeout(() => navigate('/login'), 1500); // ✅ redirect to login
     } catch (error) {

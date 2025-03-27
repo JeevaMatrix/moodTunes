@@ -14,7 +14,7 @@ function Logs() {
   useEffect(() => {
     const fetchLogs = async () => {
       try {
-        const res = await axios.get(`http://localhost:5000/logs/${userId}`);
+        const res = await axios.get(`https://moodtunesbackend.onrender.com/logs/${userId}`);
         setLogs(res.data);
         setLoading(false);
       } catch (err) {

@@ -13,7 +13,7 @@ const Login = ({ onLogin }) => {
     e.preventDefault();
     setErr('');
     try {
-      const res = await axios.post('http://localhost:5000/login', { email, password });
+      const res = await axios.post('https://moodtunesbackend.onrender.com/login', { email, password });
       localStorage.setItem('user', JSON.stringify(res.data));
       onLogin(res.data);
       navigate('/'); // 🚀 redirect to Home

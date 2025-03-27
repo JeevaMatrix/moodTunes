@@ -1,0 +1,136 @@
+/* Home.css */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #346276, #203a43, #6ab2d1);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .home {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #00ffd9;
+  }
+  
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    
+    
+    /* padding: 50px;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3); */
+  }
+  
+  .select {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: #333;
+    transition: 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .select:hover {
+    box-shadow: 0px 0px 10px #00ffd9;
+  }
+  
+  .button {
+    background-color: #00ffd9;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #000;
+  }
+  
+  .button:hover {
+    background-color: #00ccb3;
+    transform: scale(1.05);
+  }
+  
+  .loading {
+    font-size: 1.2rem;
+    margin-top: 20px;
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .video-card {
+    background: #1e1e1e;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.6);
+    transition: transform 0.3s ease;
+  }
+  
+  .video-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .video-title {
+    font-size: 0.95rem;
+    margin-top: 10px;
+    color: #ddd;
+  }
+
+  .form-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .button.shuffle-btn {
+    background-color: #ff7b7b;
+    color: #fff;
+  }
+  
+  .shuffle-btn:hover {
+    background-color: #ff4d4d;
+  }
+  /* .shuffle-btn {
+  margin-top: 20px;
+  background: #00d4ff;
+  color: #141e30;
+  padding: 10px 22px;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 5px 15px rgba(0, 212, 255, 0.3);
+  transition: all 0.3s ease;
+}
+.shuffle-btn:hover {
+  background: #fff;
+  color: #141e30;
+  transform: scale(1.05);
+} */
+
+  
